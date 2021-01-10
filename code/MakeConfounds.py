@@ -44,8 +44,12 @@ for f in cons:
     # aroma_motion=[col for col in con_regs if col.startswith('aroma_motion_')] # skipping aroma due to reproducibility issues
     motion = ['trans_x','trans_y','trans_z','rot_x','rot_y','rot_z']
     fd = ['framewise_displacement']
-    filter_col=np.concatenate([cosine,NSS,motion,fd,aCompCor])
+    filter_col=np.concatenate([cosine,NSS,motion,aCompCor,fd])
     df_all=con_regs[filter_col]
+
+    # replace n/a values with 0 so that FSL doesn't ignore the whole column
+    #DataFrame.fillna(value=None, method=None, axis=None, inplace=False, limit=None, downcast=None)
+    df_all.fillna(0, inplace=True)
 
     # generate output files
     outfile="%s_task-%s_run-%s_desc-fslConfounds.tsv"%(sub,task,run)
