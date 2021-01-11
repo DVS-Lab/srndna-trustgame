@@ -37,7 +37,7 @@ if [ -e ${OUTPUT}.gfeat/cope1.feat/cluster_mask_zstat1.nii.gz ]; then
 	# run randomise if output doesn't exist and the contrasts (copes) are valid
 	cd ${OUTPUT}.gfeat/cope1.feat
 	if [ ! -e randomise_tfce_corrp_tstat4.nii.gz ] && [ $copenum -ge $copenum_thresh_randomise ]; then
-		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000 &
+		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000
 	fi
 
 else # try to run feat and clean up previous effort with partial output
@@ -74,7 +74,7 @@ if [ -e ${OUTPUT}.gfeat/cope1.feat/cluster_mask_zstat1.nii.gz ]; then
 	# run randomise if output doesn't exist and the contrasts (copes) are valid
 	cd ${OUTPUT}.gfeat/cope1.feat
 	if [ ! -e randomise_tfce_corrp_tstat4.nii.gz ] && [ $copenum -ge $copenum_thresh_randomise ]; then
-		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000 &
+		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000
 	fi
 
 else # try to run feat and clean up previous effort with partial output
@@ -111,7 +111,7 @@ if [ -e ${OUTPUT}.gfeat/cope1.feat/cluster_mask_zstat1.nii.gz ]; then
 	# run randomise if output doesn't exist and the contrasts (copes) are valid
 	cd ${OUTPUT}.gfeat/cope1.feat
 	if [ ! -e randomise_tfce_corrp_tstat2.nii.gz ] && [ $copenum -ge $copenum_thresh_randomise ]; then
-		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000 &
+		randomise -i filtered_func_data.nii.gz -o randomise -d design.mat -t design.con -m mask.nii.gz -T -c 2.6 -n 10000
 	fi
 
 else # try to run feat and clean up previous effort with partial output
