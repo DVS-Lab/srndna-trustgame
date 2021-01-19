@@ -5,6 +5,7 @@ Notes on masks for the SRNDNA project.
 ## Contrasts defining ROIs
 - Reciprocate > Defect
 - (Friend Choices + Stranger Choices) > Computer Choices
+- using vox thresh for both for anatomical specificity
 
 ## Reslicing networks to native resolution
 - reslicing to native resolution
