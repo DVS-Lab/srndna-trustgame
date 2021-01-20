@@ -10,7 +10,7 @@ maindir="$(dirname "$scriptdir")"
 
 
 # this loop defines the different types of analyses that will go into the group comparisons
-for analysis in ppi_seed-PCC ppi_seed-rFFA ppi_seed-tTPJ ppi_seed-VMPFCface ppi_seed-VMPFCwin ppi_seed-VS; do
+for analysis in ppi_seed-PCC ppi_seed-rFFA ppi_seed-rTPJ ppi_seed-VMPFCface ppi_seed-VMPFCwin ppi_seed-VS; do
 	analysistype=type-${analysis}
 
 	# these define the cope number (copenum) and cope name (copename)
