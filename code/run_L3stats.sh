@@ -27,7 +27,7 @@ for analysis in ppi_seed-PCC ppi_seed-rFFA ppi_seed-rTPJ ppi_seed-VMPFCface ppi_
 			continue
 		fi
 
-		NCORES=12 # per script; each script will launch 3 feat or randomise processes
+		NCORES=12 
 		SCRIPTNAME=${maindir}/code/L3stats.sh
 		while [ $(ps -ef | grep -v grep | grep $SCRIPTNAME | wc -l) -ge $NCORES ]; do
 			sleep 1s
