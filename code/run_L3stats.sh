@@ -14,7 +14,8 @@ for analysis in ppi_seed-PCC ppi_seed-rFFA ppi_seed-rTPJ ppi_seed-VMPFCface ppi_
 	analysistype=type-${analysis}
 
 	# these define the cope number (copenum) and cope name (copename)
-	for copeinfo in "1 c_C" "2 c_F" "3 c_S" "4 C_def" "5 C_rec" "6 F_def" "7 F_rec" "8 S_def" "9 S_rec" "10 rec-def" "11 face" "12 rec-def_F-S" "13 F-S" "14 F-C" "15 S-C" "16 rec_SocClose" "17 def_SocClose" "18 rec-def_SocClose" "19 phys"; do
+	#for copeinfo in "1 c_C" "2 c_F" "3 c_S" "4 C_def" "5 C_rec" "6 F_def" "7 F_rec" "8 S_def" "9 S_rec" "10 rec-def" "11 face" "12 rec-def_F-S" "13 F-S" "14 F-C" "15 S-C" "16 rec_SocClose" "17 def_SocClose" "18 rec-def_SocClose" "19 phys"; do
+	for copeinfo in "4 C_def" "5 C_rec" "6 F_def" "7 F_rec" "8 S_def" "9 S_rec"; do
 
 		# split copeinfo variable
 		set -- $copeinfo
