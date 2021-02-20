@@ -24,7 +24,7 @@ copenum=$1
 copenum_thresh_randomise=10 # actual contrasts start with cope10 (rec > def). no need to do randomise main effects (e.g., rec > nothing/fixation/baseline)
 copename=$2
 REPLACEME=$3 # this defines the parts of the path that differ across analyses
-MAINOUTPUT=${maindir}/derivatives/fsl/L3_model-01_task-${task}_n${N}_flame1+2_forPlotting
+MAINOUTPUT=${maindir}/derivatives/fsl/L3_model-01_task-${task}_n${N}_flame1+2_retest
 mkdir -p $MAINOUTPUT
 
 
