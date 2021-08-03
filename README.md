@@ -25,14 +25,16 @@ This repository contains code related to our manuscript, tentatively titled "Neu
 # get code and data (two options for data)
 git clone https://github.com/DVS-Lab/srndna-trust
 cd srndna-trust
+rm -rf bids # remove bids subdirectory since it will be replaced below
 
 # option 1 for data -- if outside of lab and reproducing/extending:
-datalad install https://github.com/OpenNeuroDatasets/ds003745.git
-# note: ds003745 would be the "bids" folder in the fmriprep.sh script, so you need to fix this.
-# get the data you want with the datalad commands
+datalad clone https://github.com/OpenNeuroDatasets/ds003745.git bids
+# the bids folder is a datalad dataset
+# you can get the data you want with the datalad commands
 
 # option 2 for data -- if inside of lab and testing/training:
-bash code/run_prepdata.sh # create bids data, but restrict to a few subjects to save diskspace
+bash code/run_prepdata.sh
+# this creates the bids data, but restrict to a few subjects to save diskspace
 
 # run preprocessing and generate confounds and timing files for analyses
 bash code/run_fmriprep.sh
