@@ -23,14 +23,15 @@ This repository contains code related to our manuscript, tentatively titled "Neu
 ## Basic commands to reproduce our analyses
 ```
 # get code and data (two options for data)
-git clone https://github.com/DVS-Lab/srndna-trust
-cd srndna-trust
+git clone https://github.com/DVS-Lab/srndna-trustgame
+cd srndna-trustgame
 rm -rf bids # remove bids subdirectory since it will be replaced below
 
 # option 1 for data -- if outside of lab and reproducing/extending:
 datalad clone https://github.com/OpenNeuroDatasets/ds003745.git bids
 # the bids folder is a datalad dataset
-# you can get the data you want with the datalad commands
+# you can get all of the data with the command below:
+datalad get sub-*
 
 # option 2 for data -- if inside of lab and testing/training:
 bash code/run_prepdata.sh
