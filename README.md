@@ -1,5 +1,5 @@
 # Age-Related Differences in Social Closeness and Trust
-This repository contains code related to our manuscript, tentatively titled "Neural Responses to Reciprocated Trust in Older and Younger Adults". All hypotheses and analysis plans were pre-registered on AsPredicted on 7/26/2018 and data collection commenced on 7/31/2018. Imaging data will be shared via [OpenNeuro][openneuro] when the manuscript is posted on bioRxiv.
+This repository contains code related to our manuscript, titled "Age-Related Differences in Ventral Striatal and Default Mode Network Function During Reciprocated Trust" (preprint: https://www.biorxiv.org/content/10.1101/2021.07.29.454071v1.abstract). All hypotheses and analysis plans were pre-registered on AsPredicted on 7/26/2018 and data collection commenced on 7/31/2018. Imaging data will be shared via [OpenNeuro][openneuro] when the manuscript is posted on bioRxiv.
 
 
 ## A few prerequisites and recommendations
@@ -11,13 +11,15 @@ This repository contains code related to our manuscript, tentatively titled "Neu
 
 
 ## Notes on repository organization and files
-- Raw DICOMS (an input to heudiconv) are only accessible locally (Smith Lab Linux: /data/sourcedata)
-- Some of the contents of this repository are not tracked (.gitignore) because the files are large and we do not yet have a nice workflow for datalad. These folders include: /data/sourcedata (dicoms), bids, and derivatives.
+- Raw DICOMS (an input to heudiconv) are private and only accessible locally (Smith Lab Linux: /data/sourcedata)
+- Some of the contents of this repository are not tracked (.gitignore) because the files are large and we do not yet have a nice workflow for datalad. These folders include `/data/sourcedata` (dicoms) and parts of `bids` and `derivatives`.
 - Tracked folders and their contents:
   - `code`: analysis code
   - `templates`: fsf template files used for FSL analyses
   - `masks`: images used as masks, networks, and seed regions in analyses
   - `stimuli`: psychopy scripts and matlab scripts for delivering stimuli and organizing output
+  - `bids`: bids data (only text files since images need to be obtained from [OpenNeuro][openneuro], as described below)
+  - `derivatives`: derivatives from analysis scripts, but only text files (re-run script to regenerate larger outputs)
 
 
 ## Basic commands to reproduce our analyses
