@@ -1,4 +1,4 @@
-# Age-Related Differences in Social Closeness and Trust
+# SRNDNA: Trust Game Data and Analyses
 This repository contains code related to our manuscript, titled "Age-Related Differences in Ventral Striatal and Default Mode Network Function During Reciprocated Trust" (preprint: https://www.biorxiv.org/content/10.1101/2021.07.29.454071v1.abstract). All hypotheses and analysis plans were pre-registered on AsPredicted on 7/26/2018 and data collection commenced on 7/31/2018. Imaging data will be shared via [OpenNeuro][openneuro] when the manuscript is posted on bioRxiv.
 
 
