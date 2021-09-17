@@ -21,12 +21,13 @@ try
         RT = [RT; C{4}];
         trust_value = [trust_value; C{5}];
         
+        keyboard
         % get friend trials and adjust for recip/defect on previous trial
         friend_trials = trial_type(startsWith(trial_type(:),'outcome_friend'));
-        friend_trials(end) = [];
+        friend_trials(end) = []; % removes last element
         %friend_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_friend'))));
         friend_values = RT(startsWith(trial_type(:),'outcome_friend'));
-        friend_values(1) = [];
+        friend_values(1) = []; % removes first element. now everything is linked to the previous outcome with this partner
         
         % get stranger trials and adjust for recip/defect on previous trial
         stranger_trials = trial_type(startsWith(trial_type(:),'outcome_stranger'));
@@ -42,7 +43,6 @@ try
         %computer_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_computer'))));
         computer_values = RT(startsWith(trial_type(:),'outcome_computer'));
         computer_values(1) = [];
-        
         
         
     end
