@@ -24,20 +24,23 @@ try
         % get friend trials and adjust for recip/defect on previous trial
         friend_trials = trial_type(startsWith(trial_type(:),'outcome_friend'));
         friend_trials(end) = [];
-        friend_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_friend'))));
+        %friend_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_friend'))));
+        friend_values = RT(startsWith(trial_type(:),'outcome_friend'));
         friend_values(1) = [];
         
         % get stranger trials and adjust for recip/defect on previous trial
         stranger_trials = trial_type(startsWith(trial_type(:),'outcome_stranger'));
         stranger_trials(end) = [];
-        stranger_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_stranger'))));
+        %stranger_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_stranger'))));
+        stranger_values = RT(startsWith(trial_type(:),'outcome_stranger'));
         stranger_values(1) = [];
         
         
         % get computer trials and adjust for recip/defect on previous trial
         computer_trials = trial_type(startsWith(trial_type(:),'outcome_computer'));
         computer_trials(end) = [];
-        computer_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_computer'))));
+        %computer_values = str2num(cell2mat(trust_value(startsWith(trial_type(:),'outcome_computer'))));
+        computer_values = RT(startsWith(trial_type(:),'outcome_computer'));
         computer_values(1) = [];
         
         

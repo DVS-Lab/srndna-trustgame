@@ -16,7 +16,7 @@ sublist = [104 105 106 107 108 109 110 111 112 113 115 116 ...
     143 144 145 147 149:159];
 
 
-fname = sprintf('summary_task-trust_desc-postOutcomeShifts.csv');
+fname = sprintf('summary_task-trust_desc-postOutcomeShifts_RT.csv');
 fid = fopen(fullfile(outdir,fname),'w');
 fprintf(fid,'sub,computer_defect,computer_recip,stranger_defect,stranger_recip,friend_defect,friend_recip\n');
 for s = 1:length(sublist)
