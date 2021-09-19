@@ -19,8 +19,8 @@ melodic -i ${scriptdir}/melodic_filelist.txt \
 
 # dual regression with 1 -1 1 0 (des_norm, no design inputs, 1 permutations, and 0 thresholding)
 dual_regression ${outdir}/melodic-concat_dim-00_task-${task}.ica/melodic_IC \
-1 -1 1 0 \
-${outdir}/melodic-concat_dim-00_task-${task}.ica \
+1 -1 1 \
+${outdir}/melodic-concat_dim-00_task-${task}.ica/DR \
 `cat ${scriptdir}/melodic_filelist.txt`
 
 
@@ -33,6 +33,10 @@ melodic -i ${scriptdir}/melodic_filelist.txt \
 
 # dual regression with 1 -1 1 0 (des_norm, no design inputs, 1 permutations, and 0 thresholding)
 dual_regression ${outdir}/melodic-concat_dim-25_task-${task}.ica/melodic_IC \
-1 -1 1 0 \
-${outdir}/melodic-concat_dim-25_task-${task}.ica \
+1 -1 1 \
+${outdir}/melodic-concat_dim-25_task-${task}.ica/DR \
 `cat ${scriptdir}/melodic_filelist.txt`
+
+# tar output and transfer to google drive
+tar -zcvf melodic_task-trust.tar.gz ${outdir}/melodic-concat_dim-25_task-${task}.ica ${outdir}/melodic-concat_dim-00_task-${task}.ica
+rclone copy melodic_task-trust.tar.gz dvs-temple:projects/
