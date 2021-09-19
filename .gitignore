@@ -131,6 +131,7 @@ dmypy.json
 # autosave files and other system files
 *~
 .DS_Store
+*.asv
 
 # potentially private
 .heudiconv
