@@ -8,17 +8,18 @@ scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 maindir="$(dirname "$scriptdir")"
 
 task=trust
+outdir=${maindir}/derivatives/fsl
 
 # run melodic: auto-dim
 melodic -i ${scriptdir}/melodic_filelist.txt \
--o melodic-concat_dim-00_task-${task}.ica -v \
---nobet --bgimage=mean_func \
+-o ${outdir}/melodic-concat_dim-00_task-${task}.ica -v \
+--nobet --bgimage=${outdir}/mean_func \
 --report --guireport=report.html -d 0 \
 --mmthresh=0.5 --Ostats -a concat
 
 # run melodic: 25 components
 melodic -i ${scriptdir}/melodic_filelist.txt \
--o melodic-concat_dim-25_task-${task}.ica -v \
---nobet --bgimage=mean_func \
+-o ${outdir}/melodic-concat_dim-25_task-${task}.ica -v \
+--nobet --bgimage=${outdir}/mean_func \
 --report --guireport=report.html -d 25 \
 --mmthresh=0.5 --Ostats -a concat
