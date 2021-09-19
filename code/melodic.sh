@@ -11,32 +11,32 @@ task=trust
 outdir=${maindir}/derivatives/fsl
 
 # run melodic (auto-dim) and dual regression
-melodic -i ${scriptdir}/melodic_filelist.txt \
--o ${outdir}/melodic-concat_dim-00_task-${task}.ica -v \
+melodic -i ${scriptdir}/melodic_filelist_L1stats.txt \
+-o ${outdir}/melodic-concat_dim-00_task-${task}_smoothed.ica -v \
 --nobet --bgimage=${outdir}/mean_func \
 --report --guireport=report.html -d 0 \
 --mmthresh=0.5 --Ostats -a concat
 
 # dual regression with 1 -1 1 0 (des_norm, no design inputs, 1 permutations, and 0 thresholding)
-dual_regression ${outdir}/melodic-concat_dim-00_task-${task}.ica/melodic_IC \
+dual_regression ${outdir}/melodic-concat_dim-00_task-${task}_smoothed.ica/melodic_IC \
 1 -1 1 \
-${outdir}/melodic-concat_dim-00_task-${task}.ica/DR \
-`cat ${scriptdir}/melodic_filelist.txt`
+${outdir}/melodic-concat_dim-00_task-${task}_smoothed.ica/DR \
+`cat ${scriptdir}/melodic_filelist_L1stats.txt`
 
 
 # run melodic (25 components) and dual regression
-melodic -i ${scriptdir}/melodic_filelist.txt \
--o ${outdir}/melodic-concat_dim-25_task-${task}.ica -v \
+melodic -i ${scriptdir}/melodic_filelist_L1stats.txt \
+-o ${outdir}/melodic-concat_dim-25_task-${task}_smoothed.ica -v \
 --nobet --bgimage=${outdir}/mean_func \
 --report --guireport=report.html -d 25 \
 --mmthresh=0.5 --Ostats -a concat
 
 # dual regression with 1 -1 1 0 (des_norm, no design inputs, 1 permutations, and 0 thresholding)
-dual_regression ${outdir}/melodic-concat_dim-25_task-${task}.ica/melodic_IC \
+dual_regression ${outdir}/melodic-concat_dim-25_task-${task}_smoothed.ica/melodic_IC \
 1 -1 1 \
-${outdir}/melodic-concat_dim-25_task-${task}.ica/DR \
-`cat ${scriptdir}/melodic_filelist.txt`
+${outdir}/melodic-concat_dim-25_task-${task}_smoothed.ica/DR \
+`cat ${scriptdir}/melodic_filelist_L1stats.txt`
 
 # tar output and transfer to google drive
-tar -zcvf melodic_task-trust.tar.gz ${outdir}/melodic-concat_dim-25_task-${task}.ica ${outdir}/melodic-concat_dim-00_task-${task}.ica
-rclone copy melodic_task-trust.tar.gz dvs-temple:projects/
+tar -zcvf melodic_task-trust_smoothed.tar.gz ${outdir}/melodic-concat_dim-25_task-${task}_smoothed.ica ${outdir}/melodic-concat_dim-00_task-${task}_smoothed.ica
+rclone copy melodic_task-trust_smoothed.tar.gz dvs-temple:projects/
