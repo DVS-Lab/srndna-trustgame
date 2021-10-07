@@ -43,7 +43,6 @@ try
         %computer_values = RT(startsWith(trial_type(:),'outcome_computer'));
         computer_values(1) = [];
         
-        
     end
     
     output.computer_defect = std(computer_values(endsWith(computer_trials(:),'defect')));

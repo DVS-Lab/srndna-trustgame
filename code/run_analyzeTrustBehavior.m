@@ -1,6 +1,8 @@
 % analyze and aggregate trust task behavior across all subjects 
 % make sure you run from the code directory so that paths are correct
 
+clear all;
+
 % set paths and output
 codedir = pwd;
 addpath(codedir);
