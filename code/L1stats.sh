@@ -65,7 +65,7 @@ if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 	fi
 	for net in `seq 0 9`; do
 		NET=${maindir}/masks/melodic-114_smith09_net${net}.nii.gz
-		TSFILE=${MAINOUTPUT}/ts_task-${TASK}_net000${net}_nppi-${ppi}_run-0${run}.txt
+		TSFILE=${MAINOUTPUT}/ts_task-${TASK}_melodic-114_net${net}_nppi-${ppi}_run-0${run}.txt
 		fsl_glm -i $DATA -d $NET -o $TSFILE --demean -m $MASK
 		eval INPUT${net}=$TSFILE
 	done
