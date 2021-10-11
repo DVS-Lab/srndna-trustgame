@@ -49,7 +49,7 @@ fi
 if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 
 	# check for output and skip existing
-	OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-01_type-nppi-${ppi}_run-0${run}_sm-${sm}
+	OUTPUT=${MAINOUTPUT}/L1_task-${TASK}_model-01_type-melodic-nppi-${ppi}_run-0${run}_sm-${sm}
 	if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
 		exit
 	else
@@ -64,7 +64,7 @@ if [ "$ppi" == "ecn" -o  "$ppi" == "dmn" ]; then
 		exit
 	fi
 	for net in `seq 0 9`; do
-		NET=${maindir}/masks/nan_rPNAS_2mm_net000${net}.nii.gz
+		NET=${maindir}/masks/melodic-114_smith09_net${net}.nii.gz
 		TSFILE=${MAINOUTPUT}/ts_task-${TASK}_net000${net}_nppi-${ppi}_run-0${run}.txt
 		fsl_glm -i $DATA -d $NET -o $TSFILE --demean -m $MASK
 		eval INPUT${net}=$TSFILE
