@@ -30,7 +30,7 @@ set fmri(featwatcher_yn) 0
 set fmri(sscleanup_yn) 0
 
 # Output directory
-set fmri(outputdir) "/data/projects/srndna-trustgame/derivatives/fsl/__tmpL3_newCovs_interaction"
+set fmri(outputdir) "OUTPUT"
 
 # TR(s)
 set fmri(tr) 3
@@ -268,153 +268,152 @@ set fmri(paradigm_hp) 100
 # Total voxels
 set fmri(totalVoxels) 314028
 
-
 # Number of lower-level copes feeding into higher-level analysis
 set fmri(ncopeinputs) 0
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "/data/projects/srndna-trustgame/derivatives/fsl/sub-104/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1"
+set feat_files(1) "BASEDIR/derivatives/fsl/sub-104/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (2)
-set feat_files(2) "/data/projects/srndna-trustgame/derivatives/fsl/sub-105/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(2) "BASEDIR/derivatives/fsl/sub-105/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (3)
-set feat_files(3) "/data/projects/srndna-trustgame/derivatives/fsl/sub-106/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(3) "BASEDIR/derivatives/fsl/sub-106/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (4)
-set feat_files(4) "/data/projects/srndna-trustgame/derivatives/fsl/sub-107/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(4) "BASEDIR/derivatives/fsl/sub-107/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (5)
-set feat_files(5) "/data/projects/srndna-trustgame/derivatives/fsl/sub-108/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(5) "BASEDIR/derivatives/fsl/sub-108/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (6)
-set feat_files(6) "/data/projects/srndna-trustgame/derivatives/fsl/sub-109/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(6) "BASEDIR/derivatives/fsl/sub-109/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (7)
-set feat_files(7) "/data/projects/srndna-trustgame/derivatives/fsl/sub-110/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(7) "BASEDIR/derivatives/fsl/sub-110/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (8)
-set feat_files(8) "/data/projects/srndna-trustgame/derivatives/fsl/sub-111/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(8) "BASEDIR/derivatives/fsl/sub-111/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (9)
-set feat_files(9) "/data/projects/srndna-trustgame/derivatives/fsl/sub-112/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(9) "BASEDIR/derivatives/fsl/sub-112/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (10)
-set feat_files(10) "/data/projects/srndna-trustgame/derivatives/fsl/sub-113/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(10) "BASEDIR/derivatives/fsl/sub-113/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (11)
-set feat_files(11) "/data/projects/srndna-trustgame/derivatives/fsl/sub-115/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(11) "BASEDIR/derivatives/fsl/sub-115/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (12)
-set feat_files(12) "/data/projects/srndna-trustgame/derivatives/fsl/sub-116/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(12) "BASEDIR/derivatives/fsl/sub-116/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (13)
-set feat_files(13) "/data/projects/srndna-trustgame/derivatives/fsl/sub-117/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(13) "BASEDIR/derivatives/fsl/sub-117/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (14)
-set feat_files(14) "/data/projects/srndna-trustgame/derivatives/fsl/sub-118/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(14) "BASEDIR/derivatives/fsl/sub-118/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (15)
-set feat_files(15) "/data/projects/srndna-trustgame/derivatives/fsl/sub-120/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(15) "BASEDIR/derivatives/fsl/sub-120/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (16)
-set feat_files(16) "/data/projects/srndna-trustgame/derivatives/fsl/sub-121/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(16) "BASEDIR/derivatives/fsl/sub-121/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (17)
-set feat_files(17) "/data/projects/srndna-trustgame/derivatives/fsl/sub-122/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(17) "BASEDIR/derivatives/fsl/sub-122/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (18)
-set feat_files(18) "/data/projects/srndna-trustgame/derivatives/fsl/sub-124/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(18) "BASEDIR/derivatives/fsl/sub-124/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (19)
-set feat_files(19) "/data/projects/srndna-trustgame/derivatives/fsl/sub-125/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(19) "BASEDIR/derivatives/fsl/sub-125/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (20)
-set feat_files(20) "/data/projects/srndna-trustgame/derivatives/fsl/sub-126/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(20) "BASEDIR/derivatives/fsl/sub-126/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (21)
-set feat_files(21) "/data/projects/srndna-trustgame/derivatives/fsl/sub-127/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(21) "BASEDIR/derivatives/fsl/sub-127/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (22)
-set feat_files(22) "/data/projects/srndna-trustgame/derivatives/fsl/sub-128/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(22) "BASEDIR/derivatives/fsl/sub-128/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (23)
-set feat_files(23) "/data/projects/srndna-trustgame/derivatives/fsl/sub-129/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(23) "BASEDIR/derivatives/fsl/sub-129/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (24)
-set feat_files(24) "/data/projects/srndna-trustgame/derivatives/fsl/sub-130/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(24) "BASEDIR/derivatives/fsl/sub-130/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (25)
-set feat_files(25) "/data/projects/srndna-trustgame/derivatives/fsl/sub-131/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(25) "BASEDIR/derivatives/fsl/sub-131/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (26)
-set feat_files(26) "/data/projects/srndna-trustgame/derivatives/fsl/sub-132/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(26) "BASEDIR/derivatives/fsl/sub-132/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (27)
-set feat_files(27) "/data/projects/srndna-trustgame/derivatives/fsl/sub-133/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(27) "BASEDIR/derivatives/fsl/sub-133/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (28)
-set feat_files(28) "/data/projects/srndna-trustgame/derivatives/fsl/sub-134/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(28) "BASEDIR/derivatives/fsl/sub-134/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (29)
-set feat_files(29) "/data/projects/srndna-trustgame/derivatives/fsl/sub-135/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(29) "BASEDIR/derivatives/fsl/sub-135/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (30)
-set feat_files(30) "/data/projects/srndna-trustgame/derivatives/fsl/sub-136/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(30) "BASEDIR/derivatives/fsl/sub-136/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (31)
-set feat_files(31) "/data/projects/srndna-trustgame/derivatives/fsl/sub-137/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(31) "BASEDIR/derivatives/fsl/sub-137/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (32)
-set feat_files(32) "/data/projects/srndna-trustgame/derivatives/fsl/sub-138/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(32) "BASEDIR/derivatives/fsl/sub-138/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (33)
-set feat_files(33) "/data/projects/srndna-trustgame/derivatives/fsl/sub-140/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(33) "BASEDIR/derivatives/fsl/sub-140/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (34)
-set feat_files(34) "/data/projects/srndna-trustgame/derivatives/fsl/sub-141/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(34) "BASEDIR/derivatives/fsl/sub-141/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (35)
-set feat_files(35) "/data/projects/srndna-trustgame/derivatives/fsl/sub-142/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(35) "BASEDIR/derivatives/fsl/sub-142/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (36)
-set feat_files(36) "/data/projects/srndna-trustgame/derivatives/fsl/sub-143/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(36) "BASEDIR/derivatives/fsl/sub-143/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (37)
-set feat_files(37) "/data/projects/srndna-trustgame/derivatives/fsl/sub-144/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(37) "BASEDIR/derivatives/fsl/sub-144/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (38)
-set feat_files(38) "/data/projects/srndna-trustgame/derivatives/fsl/sub-147/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(38) "BASEDIR/derivatives/fsl/sub-147/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (39)
-set feat_files(39) "/data/projects/srndna-trustgame/derivatives/fsl/sub-149/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(39) "BASEDIR/derivatives/fsl/sub-149/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (40)
-set feat_files(40) "/data/projects/srndna-trustgame/derivatives/fsl/sub-150/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(40) "BASEDIR/derivatives/fsl/sub-150/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (41)
-set feat_files(41) "/data/projects/srndna-trustgame/derivatives/fsl/sub-151/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(41) "BASEDIR/derivatives/fsl/sub-151/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (42)
-set feat_files(42) "/data/projects/srndna-trustgame/derivatives/fsl/sub-153/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(42) "BASEDIR/derivatives/fsl/sub-153/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (43)
-set feat_files(43) "/data/projects/srndna-trustgame/derivatives/fsl/sub-154/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(43) "BASEDIR/derivatives/fsl/sub-154/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (44)
-set feat_files(44) "/data/projects/srndna-trustgame/derivatives/fsl/sub-155/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(44) "BASEDIR/derivatives/fsl/sub-155/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (45)
-set feat_files(45) "/data/projects/srndna-trustgame/derivatives/fsl/sub-156/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(45) "BASEDIR/derivatives/fsl/sub-156/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (46)
-set feat_files(46) "/data/projects/srndna-trustgame/derivatives/fsl/sub-157/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(46) "BASEDIR/derivatives/fsl/sub-157/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (47)
-set feat_files(47) "/data/projects/srndna-trustgame/derivatives/fsl/sub-158/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(47) "BASEDIR/derivatives/fsl/sub-158/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # 4D AVW data or FEAT directory (48)
-set feat_files(48) "/data/projects/srndna-trustgame/derivatives/fsl/sub-159/L2_task-trust_model-01_type-act_sm-6.gfeat/cope10.feat/stats/cope1.nii.gz"
+set feat_files(48) "BASEDIR/derivatives/fsl/sub-159/L2_task-trust_model-01_REPLACEME_sm-6.gfeat/copeCOPENUM.feat/stats/cope1.nii.gz"
 
 # Add confound EVs text file
 set fmri(confoundevs) 0
